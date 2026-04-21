@@ -1,522 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HotBeans Web – Apply</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="topnav">
-  <a href="index.html" class="logo">
-  scr <img src="https://th.bing.com/th/id/OIP.YHjpVh_dgI79iVT2qA23bwHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3" length="45px" width="45">
-    Hot Beans
-  </a>
-  <nav>
-    <a href="index.html" data-nav>Home</a>
-    <a href="about.html" data-nav>About Us</a>
-    <a href="team.html" data-nav>Our Team</a>
-    <a href="jobs.html" data-nav>Jobs</a>
-    <a href="apply.html" data-nav class="active">Apply</a>
-  </nav>
-  <a href="apply.html" class="topnav-cta">Apply Now</a>
-</header>
+  <header class="topnav">
+    <a href="index.html" class="logo">
+      <img src="https://th.bing.com/th/id/OIP.YHjpVh_dgI79iVT2qA23bwHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+        length="45px" width="45">
+      Hot Beans
+    </a>
+    <nav>
+      <a href="index.html" data-nav>Home</a>
+      <a href="about.html" data-nav>About Us</a>
+      <a href="team.html" data-nav>Our Team</a>
+      <a href="jobs.html" data-nav>Jobs</a>
+      <a href="apply.html" data-nav class="active">Apply</a>
+    </nav>
+    <a href="apply.html" class="topnav-cta">Apply Now</a>
+  </header>
 
-<div class="layout">
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-label">Main</div>
-      <a href="index.html" data-nav><i class="icon">⌂</i> Home</a>
-      <a href="about.html" data-nav><i class="icon">ℹ</i> About</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-label">Careers</div>
-      <a href="team.html" data-nav><i class="icon">👥</i> Our Team</a>
-      <a href="jobs.html" data-nav><i class="icon">📋</i> Jobs</a>
-      <a href="apply.html" class="active" data-nav><i class="icon">✏</i> Apply</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-label">Application</div>
-      <a href="#personal"><i class="icon">👤</i> Personal Info</a>
-      <a href="#role"><i class="icon">🎯</i> Role Details</a>
-      <a href="#skills"><i class="icon">🛠</i> Skills</a>
-      <a href="#statement"><i class="icon">📝</i> Statement</a>
-    </div>
-    <div class="sidebar-footer">
-      <div class="company-name">HotBeans Web Ltd.</div>
-      <div class="tagline">Developing Tomorrow's Talent</div>
-    </div>
-  </aside>
-
-  <main class="main">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span class="sep">›</span>
-      <a href="jobs.html">Jobs</a>
-      <span class="sep">›</span>
-      <span>Apply</span>
-    </div>
-
-    <div class="page-header">
-      <h1>Application Form</h1>
-      <p>Complete the form below to apply for a position at HotBeans Web. All fields marked * are required.</p>
-    </div>
-
-    <!-- SUCCESS MESSAGE (hidden initially) -->
-    <div id="success-message" style="display:none;">
-      <div style="background:#e8f5ee;border:1px solid var(--success);border-radius:6px;padding:28px;text-align:center;margin-bottom:20px;">
-        <div style="font-size:40px;margin-bottom:12px;">✓</div>
-        <h2 style="font-size:18px;font-weight:700;color:var(--success);margin-bottom:8px;">Application Submitted!</h2>
-        <p style="font-size:14px;color:#2d7a4f;margin-bottom:16px;">Thank you for applying to HotBeans Web. We've received your application and will be in touch within 5 working days.</p>
-        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-          <a href="jobs.html" class="btn btn-outline btn-sm">View Other Roles</a>
-          <a href="index.html" class="btn btn-primary btn-sm">Back to Home</a>
-        </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Main</div>
+        <a href="index.html" data-nav><i class="icon">⌂</i> Home</a>
+        <a href="about.html" data-nav><i class="icon">ℹ</i> About</a>
       </div>
-    </div>
-
-    <!-- ERROR MESSAGE (hidden initially) -->
-    <div id="error-message" style="display:none;">
-      <div class="notice notice-warn" id="error-text"></div>
-    </div>
-
-    <!-- SUBMISSION LOADING (hidden initially) -->
-    <div id="loading-message" style="display:none;">
-      <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:24px;text-align:center;margin-bottom:20px;">
-        <div style="font-size:14px;color:var(--text-muted);">⏳ Submitting your application…</div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Careers</div>
+        <a href="team.html" data-nav><i class="icon">👥</i> Our Team</a>
+        <a href="jobs.html" data-nav><i class="icon">📋</i> Jobs</a>
+        <a href="apply.html" class="active" data-nav><i class="icon">✏</i> Apply</a>
       </div>
-    </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Application</div>
+        <a href="#personal"><i class="icon">👤</i> Personal Info</a>
+        <a href="#role"><i class="icon">🎯</i> Role Details</a>
+        <a href="#skills"><i class="icon">🛠</i> Skills</a>
+        <a href="#statement"><i class="icon">📝</i> Statement</a>
+      </div>
+      <div class="sidebar-footer">
+        <div class="company-name">HotBeans Web Ltd.</div>
+        <div class="tagline">Developing Tomorrow's Talent</div>
+      </div>
+    </aside>
 
-    <!-- FORM -->
-    <div id="form-container">
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <a href="jobs.html">Jobs</a>
+        <span class="sep">›</span>
+        <span>Apply</span>
+      </div>
 
-      <!-- PROGRESS -->
-      <div class="card" style="padding:14px 16px;margin-bottom:16px;">
-        <div style="display:flex;gap:0;margin-bottom:6px;">
-          <div class="progress-step active" data-step="1" style="flex:1;text-align:center;padding:6px 0;font-size:12px;font-weight:600;background:var(--primary);color:#fff;border-radius:4px 0 0 4px;cursor:pointer;">1. Personal Info</div>
-          <div class="progress-step" data-step="2" style="flex:1;text-align:center;padding:6px 0;font-size:12px;font-weight:600;background:#e8e8e8;color:var(--text-muted);border-left:1px solid #ccc;cursor:pointer;">2. Role &amp; Skills</div>
-          <div class="progress-step" data-step="3" style="flex:1;text-align:center;padding:6px 0;font-size:12px;font-weight:600;background:#e8e8e8;color:var(--text-muted);border-left:1px solid #ccc;border-radius:0 4px 4px 0;cursor:pointer;">3. Statement &amp; Submit</div>
+      <div class="page-header">
+        <h1>Application Form</h1>
+        <p>Complete the form below to apply for a position at HotBeans Web. All fields marked * are required.</p>
+      </div>
+
+      <!-- SUCCESS MESSAGE (hidden initially) -->
+      <div id="success-message" style="display:none;">
+        <div
+          style="background:#e8f5ee;border:1px solid var(--success);border-radius:6px;padding:28px;text-align:center;margin-bottom:20px;">
+          <div style="font-size:40px;margin-bottom:12px;">✓</div>
+          <h2 style="font-size:18px;font-weight:700;color:var(--success);margin-bottom:8px;">Application Submitted!</h2>
+          <p style="font-size:14px;color:#2d7a4f;margin-bottom:16px;">Thank you for applying to HotBeans Web. We've
+            received your application and will be in touch within 5 working days.</p>
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+            <a href="jobs.html" class="btn btn-outline btn-sm">View Other Roles</a>
+            <a href="index.html" class="btn btn-primary btn-sm">Back to Home</a>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 1: PERSONAL INFO -->
-      <div id="step-1">
-        <div class="card" id="personal">
-          <h2 style="margin-bottom:16px;">Personal Information</h2>
+      <!-- ERROR MESSAGE (hidden initially) -->
+      <div id="error-message" style="display:none;">
+        <div class="notice notice-warn" id="error-text"></div>
+      </div>
 
-          <div class="form-row">
+      <!-- SUBMISSION LOADING (hidden initially) -->
+      <div id="loading-message" style="display:none;">
+        <div
+          style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:24px;text-align:center;margin-bottom:20px;">
+          <div style="font-size:14px;color:var(--text-muted);">⏳ Submitting your application…</div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div id="form-container">
+
+        <!-- PROGRESS -->
+        <div class="card" style="padding:14px 16px;margin-bottom:16px;">
+          <div style="display:flex;gap:0;margin-bottom:6px;">
+            <div class="progress-step active" data-step="1"
+              style="flex:1;text-align:center;padding:6px 0;font-size:12px;font-weight:600;background:var(--primary);color:#fff;border-radius:4px 0 0 4px;cursor:pointer;">
+              1. Personal Info</div>
+            <div class="progress-step" data-step="2"
+              style="flex:1;text-align:center;padding:6px 0;font-size:12px;font-weight:600;background:#e8e8e8;color:var(--text-muted);border-left:1px solid #ccc;cursor:pointer;">
+              2. Role &amp; Skills</div>
+            <div class="progress-step" data-step="3"
+              style="flex:1;text-align:center;padding:6px 0;font-size:12px;font-weight:600;background:#e8e8e8;color:var(--text-muted);border-left:1px solid #ccc;border-radius:0 4px 4px 0;cursor:pointer;">
+              3. Statement &amp; Submit</div>
+          </div>
+        </div>
+
+        <!-- STEP 1: PERSONAL INFO -->
+        <div id="step-1">
+          <div class="card" id="personal">
+            <h2 style="margin-bottom:16px;">Personal Information</h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="required" for="first-name">First Name</label>
+                <input type="text" id="first-name" name="firstName" placeholder="e.g. Jane" autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label class="required" for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="lastName" placeholder="e.g. Dawson" autocomplete="family-name">
+              </div>
+            </div>
+
             <div class="form-group">
-              <label class="required" for="first-name">First Name</label>
-              <input type="text" id="first-name" name="firstName" placeholder="e.g. Jane" autocomplete="given-name">
+              <label class="required" for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+              <div class="form-hint">We'll use this to contact you about your application.</div>
             </div>
+
             <div class="form-group">
-              <label class="required" for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="lastName" placeholder="e.g. Dawson" autocomplete="family-name">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" autocomplete="tel">
             </div>
-          </div>
 
-          <div class="form-group">
-            <label class="required" for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
-            <div class="form-hint">We'll use this to contact you about your application.</div>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" autocomplete="tel">
-          </div>
-
-          <div class="form-group">
-            <label for="location">Current Location</label>
-            <input type="text" id="location" name="location" placeholder="e.g. Gloucester, Cheltenham, Bristol…">
-            <div class="form-hint">City or town is sufficient. We just need to assess commute feasibility.</div>
-          </div>
-
-          <div class="form-row">
             <div class="form-group">
-              <label for="linkedin">LinkedIn Profile URL</label>
-              <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile">
+              <label for="location">Current Location</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Gloucester, Cheltenham, Bristol…">
+              <div class="form-hint">City or town is sufficient. We just need to assess commute feasibility.</div>
             </div>
-            <div class="form-group">
-              <label for="portfolio">Portfolio / GitHub URL</label>
-              <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/yourusername">
-            </div>
-          </div>
 
-          <div style="display:flex;justify-content:flex-end;margin-top:8px;">
-            <button type="button" class="btn btn-primary" onclick="goToStep(2)">Continue to Role &amp; Skills →</button>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="linkedin">LinkedIn Profile URL</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile">
+              </div>
+              <div class="form-group">
+                <label for="portfolio">Portfolio / GitHub URL</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/yourusername">
+              </div>
+            </div>
+
+            <div style="display:flex;justify-content:flex-end;margin-top:8px;">
+              <button type="button" class="btn btn-primary" onclick="goToStep(2)">Continue to Role &amp; Skills
+                →</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- STEP 2: ROLE & SKILLS -->
-      <div id="step-2" style="display:none;">
-        <div class="card" id="role">
-          <h2 style="margin-bottom:16px;">Role &amp; Skills</h2>
+        <!-- STEP 2: ROLE & SKILLS -->
+        <div id="step-2" style="display:none;">
+          <div class="card" id="role">
+            <h2 style="margin-bottom:16px;">Role &amp; Skills</h2>
 
-          <div class="form-group">
-            <label class="required" for="role-select">Position Applying For</label>
-            <select id="role-select" name="role">
-              <option value="">— Select a role —</option>
-              <option value="frontend-developer">Frontend Developer (Entry Level)</option>
-              <option value="junior-web-developer">Junior Web Developer (React)</option>
-              <option value="php-backend-developer">PHP Backend Developer</option>
-              <option value="mid-fullstack-developer">Mid-Level Full Stack Developer</option>
-              <option value="general-application">General Application (no specific role)</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="required" for="experience-level">Experience Level</label>
-            <select id="experience-level" name="experienceLevel">
-              <option value="">— Select —</option>
-              <option value="no-experience">No professional experience yet</option>
-              <option value="under-1yr">Less than 1 year</option>
-              <option value="1-2yr">1–2 years</option>
-              <option value="2-4yr">2–4 years</option>
-              <option value="4yr-plus">4+ years</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Technical Skills</label>
-            <div class="form-hint" style="margin-bottom:8px;">Tick all that apply — be honest, we'll assess at interview.</div>
-            <div class="checkbox-group">
-              <div class="checkbox-item"><input type="checkbox" id="sk-html" name="skills" value="HTML"><label for="sk-html">HTML</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-css" name="skills" value="CSS"><label for="sk-css">CSS</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-js" name="skills" value="JavaScript"><label for="sk-js">JavaScript</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-react" name="skills" value="React"><label for="sk-react">React</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-php" name="skills" value="PHP"><label for="sk-php">PHP</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-node" name="skills" value="Node.js"><label for="sk-node">Node.js</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-sql" name="skills" value="SQL"><label for="sk-sql">SQL</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-python" name="skills" value="Python"><label for="sk-python">Python</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-git" name="skills" value="Git"><label for="sk-git">Git</label></div>
-              <div class="checkbox-item"><input type="checkbox" id="sk-wp" name="skills" value="WordPress"><label for="sk-wp">WordPress</label></div>
+            <div class="form-group">
+              <label class="required" for="role-select">Position Applying For</label>
+              <select id="role-select" name="role">
+                <option value="">— Select a role —</option>
+                <option value="frontend-developer">Frontend Developer (Entry Level)</option>
+                <option value="junior-web-developer">Junior Web Developer (React)</option>
+                <option value="php-backend-developer">PHP Backend Developer</option>
+                <option value="mid-fullstack-developer">Mid-Level Full Stack Developer</option>
+                <option value="general-application">General Application (no specific role)</option>
+              </select>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="qualifications">Relevant Qualifications</label>
-            <select id="qualifications" name="qualifications">
-              <option value="">— Select highest qualification —</option>
-              <option value="gcse">GCSEs only</option>
-              <option value="a-levels">A Levels / BTEC</option>
-              <option value="bootcamp">Coding Bootcamp Certificate</option>
-              <option value="hnd">HND / HNC</option>
-              <option value="degree">University Degree</option>
-              <option value="masters">Masters Degree</option>
-              <option value="self-taught">Self-taught (no formal qualification)</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label class="required" for="experience-level">Experience Level</label>
+              <select id="experience-level" name="experienceLevel">
+                <option value="">— Select —</option>
+                <option value="no-experience">No professional experience yet</option>
+                <option value="under-1yr">Less than 1 year</option>
+                <option value="1-2yr">1–2 years</option>
+                <option value="2-4yr">2–4 years</option>
+                <option value="4yr-plus">4+ years</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label for="availability">Availability to Start</label>
-            <select id="availability" name="availability">
-              <option value="">— Select —</option>
-              <option value="immediately">Immediately</option>
-              <option value="2-weeks">2 weeks notice</option>
-              <option value="1-month">1 month notice</option>
-              <option value="2-months">2 months notice</option>
-              <option value="3-months">3 months notice</option>
-              <option value="negotiable">Negotiable</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label>Technical Skills</label>
+              <div class="form-hint" style="margin-bottom:8px;">Tick all that apply — be honest, we'll assess at
+                interview.</div>
+              <div class="checkbox-group">
+                <div class="checkbox-item"><input type="checkbox" id="sk-html" name="skills" value="HTML"><label
+                    for="sk-html">HTML</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-css" name="skills" value="CSS"><label
+                    for="sk-css">CSS</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-js" name="skills" value="JavaScript"><label
+                    for="sk-js">JavaScript</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-react" name="skills" value="React"><label
+                    for="sk-react">React</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-php" name="skills" value="PHP"><label
+                    for="sk-php">PHP</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-node" name="skills" value="Node.js"><label
+                    for="sk-node">Node.js</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-sql" name="skills" value="SQL"><label
+                    for="sk-sql">SQL</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-python" name="skills" value="Python"><label
+                    for="sk-python">Python</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-git" name="skills" value="Git"><label
+                    for="sk-git">Git</label></div>
+                <div class="checkbox-item"><input type="checkbox" id="sk-wp" name="skills" value="WordPress"><label
+                    for="sk-wp">WordPress</label></div>
+              </div>
+            </div>
 
-          <div style="display:flex;justify-content:space-between;margin-top:8px;gap:10px;">
-            <button type="button" class="btn btn-outline" onclick="goToStep(1)">← Back</button>
-            <button type="button" class="btn btn-primary" onclick="goToStep(3)">Continue to Statement →</button>
+            <div class="form-group">
+              <label for="qualifications">Relevant Qualifications</label>
+              <select id="qualifications" name="qualifications">
+                <option value="">— Select highest qualification —</option>
+                <option value="gcse">GCSEs only</option>
+                <option value="a-levels">A Levels / BTEC</option>
+                <option value="bootcamp">Coding Bootcamp Certificate</option>
+                <option value="hnd">HND / HNC</option>
+                <option value="degree">University Degree</option>
+                <option value="masters">Masters Degree</option>
+                <option value="self-taught">Self-taught (no formal qualification)</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="availability">Availability to Start</label>
+              <select id="availability" name="availability">
+                <option value="">— Select —</option>
+                <option value="immediately">Immediately</option>
+                <option value="2-weeks">2 weeks notice</option>
+                <option value="1-month">1 month notice</option>
+                <option value="2-months">2 months notice</option>
+                <option value="3-months">3 months notice</option>
+                <option value="negotiable">Negotiable</option>
+              </select>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;margin-top:8px;gap:10px;">
+              <button type="button" class="btn btn-outline" onclick="goToStep(1)">← Back</button>
+              <button type="button" class="btn btn-primary" onclick="goToStep(3)">Continue to Statement →</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- STEP 3: STATEMENT & SUBMIT -->
-      <div id="step-3" style="display:none;">
-        <div class="card" id="statement">
-          <h2 style="margin-bottom:16px;">Personal Statement &amp; Submit</h2>
+        <!-- STEP 3: STATEMENT & SUBMIT -->
+        <div id="step-3" style="display:none;">
+          <div class="card" id="statement">
+            <h2 style="margin-bottom:16px;">Personal Statement &amp; Submit</h2>
 
-          <div class="form-group">
-            <label class="required" for="statement-text">Why do you want to work at HotBeans Web?</label>
-            <textarea id="statement-text" name="statement" rows="5" placeholder="Tell us why you're interested in this role, what draws you to HotBeans, and what you hope to learn or achieve here. Minimum 100 characters."></textarea>
-            <div class="form-hint">
-              <span id="char-count">0</span> characters
-              <span id="char-min" style="color:var(--text-light);"> (minimum 100)</span>
+            <div class="form-group">
+              <label class="required" for="statement-text">Why do you want to work at HotBeans Web?</label>
+              <textarea id="statement-text" name="statement" rows="5"
+                placeholder="Tell us why you're interested in this role, what draws you to HotBeans, and what you hope to learn or achieve here. Minimum 100 characters."></textarea>
+              <div class="form-hint">
+                <span id="char-count">0</span> characters
+                <span id="char-min" style="color:var(--text-light);"> (minimum 100)</span>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label class="required" for="experience-desc">Describe your relevant experience or projects</label>
-            <textarea id="experience-desc" name="experienceDescription" rows="5" placeholder="Describe any projects you've built, courses you've completed, or experience you have. Include links if available. This could be personal projects, course work, volunteer work, or anything else relevant."></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="hear-about">How did you hear about us?</label>
-            <select id="hear-about" name="hearAbout">
-              <option value="">— Select —</option>
-              <option value="google">Google / Search Engine</option>
-              <option value="indeed">Indeed</option>
-              <option value="linkedin">LinkedIn</option>
-              <option value="reed">Reed</option>
-              <option value="word-of-mouth">Word of Mouth</option>
-              <option value="social-media">Social Media</option>
-              <option value="university">University / College</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <div class="checkbox-item" style="align-items:flex-start;gap:8px;">
-              <input type="checkbox" id="consent" name="consent" style="margin-top:2px;">
-              <label for="consent" style="font-size:13px;font-weight:400;cursor:pointer;line-height:1.5;">
-                I consent to HotBeans Web storing my application data and contacting me about this and future relevant job opportunities. Your data will be held for 12 months in accordance with our Privacy Policy. <strong>*</strong>
-              </label>
+            <div class="form-group">
+              <label class="required" for="experience-desc">Describe your relevant experience or projects</label>
+              <textarea id="experience-desc" name="experienceDescription" rows="5"
+                placeholder="Describe any projects you've built, courses you've completed, or experience you have. Include links if available. This could be personal projects, course work, volunteer work, or anything else relevant."></textarea>
             </div>
-          </div>
 
-          <div id="validation-errors" style="display:none;"></div>
+            <div class="form-group">
+              <label for="hear-about">How did you hear about us?</label>
+              <select id="hear-about" name="hearAbout">
+                <option value="">— Select —</option>
+                <option value="google">Google / Search Engine</option>
+                <option value="indeed">Indeed</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="reed">Reed</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="social-media">Social Media</option>
+                <option value="university">University / College</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
 
-          <div style="display:flex;justify-content:space-between;margin-top:8px;gap:10px;align-items:center;">
-            <button type="button" class="btn btn-outline" onclick="goToStep(2)">← Back</button>
-            <button type="button" id="submit-btn" class="btn btn-accent btn-lg" onclick="submitApplication()">Submit Application →</button>
+            <div class="form-group">
+              <div class="checkbox-item" style="align-items:flex-start;gap:8px;">
+                <input type="checkbox" id="consent" name="consent" style="margin-top:2px;">
+                <label for="consent" style="font-size:13px;font-weight:400;cursor:pointer;line-height:1.5;">
+                  I consent to HotBeans Web storing my application data and contacting me about this and future relevant
+                  job opportunities. Your data will be held for 12 months in accordance with our Privacy Policy.
+                  <strong>*</strong>
+                </label>
+              </div>
+            </div>
+
+            <div id="validation-errors" style="display:none;"></div>
+
+            <div style="display:flex;justify-content:space-between;margin-top:8px;gap:10px;align-items:center;">
+              <button type="button" class="btn btn-outline" onclick="goToStep(2)">← Back</button>
+              <button type="button" id="submit-btn" class="btn btn-accent btn-lg" onclick="submitApplication()">Submit
+                Application →</button>
+            </div>
           </div>
         </div>
-      </div>
 
-    </div><!-- /form-container -->
+      </div><!-- /form-container -->
 
-  </main>
-</div>
+    </main>
+  </div>
 
-<footer class="site-footer">
-  © 2024 HotBeans Web Ltd. · Gloucester, UK · <a href="mailto:careers@hotbeansweb.co.uk" style="color:rgba(255,255,255,0.4);">careers@hotbeansweb.co.uk</a>
-</footer>
+  <footer class="site-footer">
+    © 2024 HotBeans Web Ltd. · Gloucester, UK · <a href="mailto:careers@hotbeansweb.co.uk"
+      style="color:rgba(255,255,255,0.4);">careers@hotbeansweb.co.uk</a>
+  </footer>
 
-<script src="main.js"></script>
-<script>
-  // ===== STEP NAVIGATION =====
-  function goToStep(step) {
-    if (step === 2 && !validateStep1()) return;
-    if (step === 3 && !validateStep2()) return;
+  <script src="main.js"></script>
+  <script>
+    // ===== STEP NAVIGATION =====
+    function goToStep(step) {
+      if (step === 2 && !validateStep1()) return;
+      if (step === 3 && !validateStep2()) return;
 
-    [1, 2, 3].forEach(n => {
-      document.getElementById('step-' + n).style.display = n === step ? '' : 'none';
-    });
-
-    document.querySelectorAll('.progress-step').forEach(el => {
-      const s = parseInt(el.dataset.step);
-      el.style.background = s === step ? 'var(--primary)' : '#e8e8e8';
-      el.style.color = s === step ? '#fff' : 'var(--text-muted)';
-    });
-
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  // ===== CHAR COUNTER =====
-  const statementTextarea = document.getElementById('statement-text');
-  const charCount = document.getElementById('char-count');
-  const charMin = document.getElementById('char-min');
-
-  statementTextarea.addEventListener('input', () => {
-    const len = statementTextarea.value.length;
-    charCount.textContent = len;
-    if (len >= 100) {
-      charCount.style.color = 'var(--success)';
-      charMin.style.display = 'none';
-    } else {
-      charCount.style.color = 'var(--text-muted)';
-      charMin.style.display = 'inline';
-    }
-  });
-
-  // ===== VALIDATION =====
-  function showFieldError(fieldId, message) {
-    const field = document.getElementById(fieldId);
-    if (!field) return;
-    field.style.borderColor = '#e74c3c';
-    field.style.boxShadow = '0 0 0 3px rgba(231,76,60,0.12)';
-
-    let err = document.getElementById('err-' + fieldId);
-    if (!err) {
-      err = document.createElement('div');
-      err.id = 'err-' + fieldId;
-      err.style.cssText = 'color:#e74c3c;font-size:11px;margin-top:3px;';
-      field.parentNode.appendChild(err);
-    }
-    err.textContent = message;
-  }
-
-  function clearFieldErrors(ids) {
-    ids.forEach(id => {
-      const field = document.getElementById(id);
-      if (field) {
-        field.style.borderColor = '';
-        field.style.boxShadow = '';
-      }
-      const err = document.getElementById('err-' + id);
-      if (err) err.remove();
-    });
-  }
-
-  function validateStep1() {
-    const fields = ['first-name', 'last-name', 'email'];
-    clearFieldErrors([...fields, 'phone', 'location', 'linkedin', 'portfolio']);
-
-    let valid = true;
-
-    if (!document.getElementById('first-name').value.trim()) {
-      showFieldError('first-name', 'Please enter your first name.');
-      valid = false;
-    }
-    if (!document.getElementById('last-name').value.trim()) {
-      showFieldError('last-name', 'Please enter your last name.');
-      valid = false;
-    }
-
-    const email = document.getElementById('email').value.trim();
-    if (!email) {
-      showFieldError('email', 'Please enter your email address.');
-      valid = false;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      showFieldError('email', 'Please enter a valid email address.');
-      valid = false;
-    }
-
-    return valid;
-  }
-
-  function validateStep2() {
-    clearFieldErrors(['role-select', 'experience-level']);
-    let valid = true;
-
-    if (!document.getElementById('role-select').value) {
-      showFieldError('role-select', 'Please select the role you are applying for.');
-      valid = false;
-    }
-    if (!document.getElementById('experience-level').value) {
-      showFieldError('experience-level', 'Please select your experience level.');
-      valid = false;
-    }
-
-    return valid;
-  }
-
-  function validateStep3() {
-    clearFieldErrors(['statement-text', 'experience-desc']);
-    let valid = true;
-
-    const statement = document.getElementById('statement-text').value.trim();
-    if (!statement) {
-      showFieldError('statement-text', 'Please write a personal statement.');
-      valid = false;
-    } else if (statement.length < 100) {
-      showFieldError('statement-text', 'Your statement must be at least 100 characters.');
-      valid = false;
-    }
-
-    const expDesc = document.getElementById('experience-desc').value.trim();
-    if (!expDesc) {
-      showFieldError('experience-desc', 'Please describe your relevant experience or projects.');
-      valid = false;
-    }
-
-    const consent = document.getElementById('consent');
-    if (!consent.checked) {
-      const errDiv = document.getElementById('validation-errors');
-      errDiv.innerHTML = '<div class="notice notice-warn" style="margin-bottom:12px;">Please tick the consent checkbox before submitting.</div>';
-      errDiv.style.display = 'block';
-      valid = false;
-    } else {
-      document.getElementById('validation-errors').style.display = 'none';
-    }
-
-    return valid;
-  }
-
-  // ===== COLLECT FORM DATA =====
-  function collectFormData() {
-    const skills = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(cb => cb.value);
-
-    return {
-      firstName: document.getElementById('first-name').value.trim(),
-      lastName: document.getElementById('last-name').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      phone: document.getElementById('phone').value.trim(),
-      location: document.getElementById('location').value.trim(),
-      linkedin: document.getElementById('linkedin').value.trim(),
-      portfolio: document.getElementById('portfolio').value.trim(),
-      role: document.getElementById('role-select').value,
-      experienceLevel: document.getElementById('experience-level').value,
-      skills: skills,
-      qualifications: document.getElementById('qualifications').value,
-      availability: document.getElementById('availability').value,
-      statement: document.getElementById('statement-text').value.trim(),
-      experienceDescription: document.getElementById('experience-desc').value.trim(),
-      hearAbout: document.getElementById('hear-about').value,
-      submittedAt: new Date().toISOString(),
-    };
-  }
-
-  // ===== SUBMIT =====
-  async function submitApplication() {
-    if (!validateStep3()) return;
-
-    const formData = collectFormData();
-
-    // Hide form, show loading
-    document.getElementById('form-container').style.display = 'none';
-    document.getElementById('loading-message').style.display = 'block';
-    document.getElementById('error-message').style.display = 'none';
-
-    try {
-      // POST to a placeholder endpoint — replace URL with your actual backend
-      const response = await fetch('https://httpbin.org/post', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      [1, 2, 3].forEach(n => {
+        document.getElementById('step-' + n).style.display = n === step ? '' : 'none';
       });
 
-      if (!response.ok) {
-        throw new Error('Server returned status ' + response.status);
-      }
+      document.querySelectorAll('.progress-step').forEach(el => {
+        const s = parseInt(el.dataset.step);
+        el.style.background = s === step ? 'var(--primary)' : '#e8e8e8';
+        el.style.color = s === step ? '#fff' : 'var(--text-muted)';
+      });
 
-      // Success
-      document.getElementById('loading-message').style.display = 'none';
-      document.getElementById('success-message').style.display = 'block';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    } catch (err) {
-      // Error state — show form again with error message
-      document.getElementById('loading-message').style.display = 'none';
-      document.getElementById('form-container').style.display = 'block';
-
-      const errDiv = document.getElementById('error-message');
-      document.getElementById('error-text').innerHTML =
-        '<strong>Submission failed.</strong> There was a problem sending your application (' + err.message + '). Please try again, or email us directly at <a href="mailto:careers@hotbeansweb.co.uk">careers@hotbeansweb.co.uk</a>.';
-      errDiv.style.display = 'block';
-
-      goToStep(3);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }
 
-  // ===== PRE-SELECT ROLE FROM URL PARAM =====
-  document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const role = params.get('role');
-    if (role) {
-      const select = document.getElementById('role-select');
-      for (const option of select.options) {
-        if (option.value === role) {
-          option.selected = true;
-          break;
+    // ===== CHAR COUNTER =====
+    const statementTextarea = document.getElementById('statement-text');
+    const charCount = document.getElementById('char-count');
+    const charMin = document.getElementById('char-min');
+
+    statementTextarea.addEventListener('input', () => {
+      const len = statementTextarea.value.length;
+      charCount.textContent = len;
+      if (len >= 100) {
+        charCount.style.color = 'var(--success)';
+        charMin.style.display = 'none';
+      } else {
+        charCount.style.color = 'var(--text-muted)';
+        charMin.style.display = 'inline';
+      }
+    });
+
+    // ===== VALIDATION =====
+    function showFieldError(fieldId, message) {
+      const field = document.getElementById(fieldId);
+      if (!field) return;
+      field.style.borderColor = '#e74c3c';
+      field.style.boxShadow = '0 0 0 3px rgba(231,76,60,0.12)';
+
+      let err = document.getElementById('err-' + fieldId);
+      if (!err) {
+        err = document.createElement('div');
+        err.id = 'err-' + fieldId;
+        err.style.cssText = 'color:#e74c3c;font-size:11px;margin-top:3px;';
+        field.parentNode.appendChild(err);
+      }
+      err.textContent = message;
+    }
+
+    function clearFieldErrors(ids) {
+      ids.forEach(id => {
+        const field = document.getElementById(id);
+        if (field) {
+          field.style.borderColor = '';
+          field.style.boxShadow = '';
+        }
+        const err = document.getElementById('err-' + id);
+        if (err) err.remove();
+      });
+    }
+
+    function validateStep1() {
+      const fields = ['first-name', 'last-name', 'email'];
+      clearFieldErrors([...fields, 'phone', 'location', 'linkedin', 'portfolio']);
+
+      let valid = true;
+
+      if (!document.getElementById('first-name').value.trim()) {
+        showFieldError('first-name', 'Please enter your first name.');
+        valid = false;
+      }
+      if (!document.getElementById('last-name').value.trim()) {
+        showFieldError('last-name', 'Please enter your last name.');
+        valid = false;
+      }
+
+      const email = document.getElementById('email').value.trim();
+      if (!email) {
+        showFieldError('email', 'Please enter your email address.');
+        valid = false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showFieldError('email', 'Please enter a valid email address.');
+        valid = false;
+      }
+
+      return valid;
+    }
+
+    function validateStep2() {
+      clearFieldErrors(['role-select', 'experience-level']);
+      let valid = true;
+
+      if (!document.getElementById('role-select').value) {
+        showFieldError('role-select', 'Please select the role you are applying for.');
+        valid = false;
+      }
+      if (!document.getElementById('experience-level').value) {
+        showFieldError('experience-level', 'Please select your experience level.');
+        valid = false;
+      }
+
+      return valid;
+    }
+
+    function validateStep3() {
+      clearFieldErrors(['statement-text', 'experience-desc']);
+      let valid = true;
+
+      const statement = document.getElementById('statement-text').value.trim();
+      if (!statement) {
+        showFieldError('statement-text', 'Please write a personal statement.');
+        valid = false;
+      } else if (statement.length < 100) {
+        showFieldError('statement-text', 'Your statement must be at least 100 characters.');
+        valid = false;
+      }
+
+      const expDesc = document.getElementById('experience-desc').value.trim();
+      if (!expDesc) {
+        showFieldError('experience-desc', 'Please describe your relevant experience or projects.');
+        valid = false;
+      }
+
+      const consent = document.getElementById('consent');
+      if (!consent.checked) {
+        const errDiv = document.getElementById('validation-errors');
+        errDiv.innerHTML = '<div class="notice notice-warn" style="margin-bottom:12px;">Please tick the consent checkbox before submitting.</div>';
+        errDiv.style.display = 'block';
+        valid = false;
+      } else {
+        document.getElementById('validation-errors').style.display = 'none';
+      }
+
+      return valid;
+    }
+
+    // ===== COLLECT FORM DATA =====
+    function collectFormData() {
+      const skills = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(cb => cb.value);
+
+      return {
+        firstName: document.getElementById('first-name').value.trim(),
+        lastName: document.getElementById('last-name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        location: document.getElementById('location').value.trim(),
+        linkedin: document.getElementById('linkedin').value.trim(),
+        portfolio: document.getElementById('portfolio').value.trim(),
+        role: document.getElementById('role-select').value,
+        experienceLevel: document.getElementById('experience-level').value,
+        skills: skills,
+        qualifications: document.getElementById('qualifications').value,
+        availability: document.getElementById('availability').value,
+        statement: document.getElementById('statement-text').value.trim(),
+        experienceDescription: document.getElementById('experience-desc').value.trim(),
+        hearAbout: document.getElementById('hear-about').value,
+        submittedAt: new Date().toISOString(),
+      };
+    }
+
+    // ===== SUBMIT =====
+    async function submitApplication() {
+      if (!validateStep3()) return;
+
+      const formData = collectFormData();
+
+      // Hide form, show loading
+      document.getElementById('form-container').style.display = 'none';
+      document.getElementById('loading-message').style.display = 'block';
+      document.getElementById('error-message').style.display = 'none';
+
+      try {
+        // POST to a placeholder endpoint — replace URL with your actual backend
+        const response = await fetch('https://httpbin.org/post', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error('Server returned status ' + response.status);
+        }
+
+        // Success
+        document.getElementById('loading-message').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      } catch (err) {
+        // Error state — show form again with error message
+        document.getElementById('loading-message').style.display = 'none';
+        document.getElementById('form-container').style.display = 'block';
+
+        const errDiv = document.getElementById('error-message');
+        document.getElementById('error-text').innerHTML =
+          '<strong>Submission failed.</strong> There was a problem sending your application (' + err.message + '). Please try again, or email us directly at <a href="mailto:careers@hotbeansweb.co.uk">careers@hotbeansweb.co.uk</a>.';
+        errDiv.style.display = 'block';
+
+        goToStep(3);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // ===== PRE-SELECT ROLE FROM URL PARAM =====
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const role = params.get('role');
+      if (role) {
+        const select = document.getElementById('role-select');
+        for (const option of select.options) {
+          if (option.value === role) {
+            option.selected = true;
+            break;
+          }
         }
       }
-    }
-  });
-</script>
+    });
+  </script>
 </body>
+
 </html>

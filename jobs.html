@@ -1,335 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HotBeans Web – Jobs</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="topnav">
-  <a href="index.html" class="logo">
-  scr <img src="https://th.bing.com/th/id/OIP.YHjpVh_dgI79iVT2qA23bwHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3" length="45px" width="45"> 
-    Hot Beans
-  </a>
-  <nav>
-    <a href="index.html" data-nav>Home</a>
-    <a href="about.html" data-nav>About Us</a>
-    <a href="team.html" data-nav>Our Team</a>
-    <a href="jobs.html" data-nav class="active">Jobs</a>
-    <a href="apply.html" data-nav>Apply</a>
-  </nav>
-  <a href="apply.html" class="topnav-cta">Apply Now</a>
-</header>
+  <header class="topnav">
+    <a href="index.html" class="logo">
+      <img src="https://th.bing.com/th/id/OIP.YHjpVh_dgI79iVT2qA23bwHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+        length="45px" width="45">
+      Hot Beans
+    </a>
+    <nav>
+      <a href="index.html" data-nav>Home</a>
+      <a href="about.html" data-nav>About Us</a>
+      <a href="team.html" data-nav>Our Team</a>
+      <a href="jobs.html" data-nav class="active">Jobs</a>
+      <a href="apply.html" data-nav>Apply</a>
+    </nav>
+    <a href="apply.html" class="topnav-cta">Apply Now</a>
+  </header>
 
-<div class="layout">
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-label">Main</div>
-      <a href="index.html" data-nav><i class="icon">⌂</i> Home</a>
-      <a href="about.html" data-nav><i class="icon">ℹ</i> About</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-label">Careers</div>
-      <a href="team.html" data-nav><i class="icon">👥</i> Our Team</a>
-      <a href="jobs.html" class="active" data-nav><i class="icon">📋</i> Jobs</a>
-      <a href="apply.html" data-nav><i class="icon">✏</i> Apply</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-label">Roles</div>
-      <a href="#frontend"><i class="icon">🖥</i> Frontend</a>
-      <a href="#backend"><i class="icon">⚙</i> Backend</a>
-      <a href="#fullstack"><i class="icon">◈</i> Full Stack</a>
-      <a href="#requirements"><i class="icon">📄</i> Requirements</a>
-    </div>
-    <div class="sidebar-footer">
-      <div class="company-name">HotBeans Web Ltd.</div>
-      <div class="tagline">Developing Tomorrow's Talent</div>
-    </div>
-  </aside>
-
-  <main class="main">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span class="sep">›</span>
-      <span>Jobs</span>
-    </div>
-
-    <div class="page-header">
-      <h1>Current Job Openings</h1>
-      <p>All positions are based in Gloucester with a hybrid working model available after the initial 3-month period.</p>
-    </div>
-
-    <!-- FILTER BAR -->
-    <div class="card" style="padding:14px 16px;margin-bottom:16px;">
-      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
-        <input type="text" id="job-search" placeholder="Search by title or skill…" style="flex:1;min-width:180px;padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;">
-        <select id="type-filter" style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
-          <option value="">All Types</option>
-          <option value="frontend">Frontend</option>
-          <option value="backend">Backend</option>
-          <option value="fullstack">Full Stack</option>
-        </select>
-        <select id="level-filter" style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
-          <option value="">All Levels</option>
-          <option value="entry">Entry Level</option>
-          <option value="junior">Junior</option>
-          <option value="mid">Mid-Level</option>
-        </select>
-        <button onclick="clearJobFilters()" style="padding:7px 12px;background:#f0f0f0;border:1px solid #ccc;border-radius:4px;font-size:12px;cursor:pointer;">Clear</button>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Main</div>
+        <a href="index.html" data-nav><i class="icon">⌂</i> Home</a>
+        <a href="about.html" data-nav><i class="icon">ℹ</i> About</a>
       </div>
-    </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Careers</div>
+        <a href="team.html" data-nav><i class="icon">👥</i> Our Team</a>
+        <a href="jobs.html" class="active" data-nav><i class="icon">📋</i> Jobs</a>
+        <a href="apply.html" data-nav><i class="icon">✏</i> Apply</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Roles</div>
+        <a href="#frontend"><i class="icon">🖥</i> Frontend</a>
+        <a href="#backend"><i class="icon">⚙</i> Backend</a>
+        <a href="#fullstack"><i class="icon">◈</i> Full Stack</a>
+        <a href="#requirements"><i class="icon">📄</i> Requirements</a>
+      </div>
+      <div class="sidebar-footer">
+        <div class="company-name">HotBeans Web Ltd.</div>
+        <div class="tagline">Developing Tomorrow's Talent</div>
+      </div>
+    </aside>
 
-    <div id="jobs-container">
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <span>Jobs</span>
+      </div>
 
-      <!-- JOB 1 -->
-      <div class="job-card" id="frontend" data-type="frontend" data-level="entry" data-skills="HTML CSS JS">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-          <div class="job-title">Frontend Developer (Entry Level)</div>
-          <span style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
-        </div>
-        <div class="job-meta">
-          <span>📍 Gloucester</span>
-          <span>🕐 Full-time</span>
-          <span>📊 Entry Level</span>
-          <span>💷 £22,000–£26,000</span>
-          <span>📅 Posted: 3 days ago</span>
-        </div>
-        <div class="job-skills" style="margin-bottom:10px;">
-          <span class="tag tag-html">HTML</span>
-          <span class="tag tag-css">CSS</span>
-          <span class="tag tag-js">JS</span>
-        </div>
-        <div class="job-desc">
-          We're looking for an enthusiastic frontend developer to join our trainee programme. You'll be working on real client projects building responsive, accessible websites using HTML, CSS, and vanilla JavaScript. No prior professional experience required — we're looking for demonstrable ability and a strong willingness to learn.
-        </div>
-        <div style="margin-bottom:12px;">
-          <strong style="font-size:13px;">Key Responsibilities:</strong>
-          <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
-            <li>Build and maintain responsive HTML/CSS layouts from design files</li>
-            <li>Implement client-side interactions using JavaScript</li>
-            <li>Participate in daily stand-ups and weekly code reviews</li>
-            <li>Collaborate with senior developers and designers</li>
-            <li>Document your code clearly and consistently</li>
-          </ul>
-        </div>
-        <div class="job-footer">
-          <div></div>
-          <a href="apply.html?role=frontend-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
+      <div class="page-header">
+        <h1>Current Job Openings</h1>
+        <p>All positions are based in Gloucester with a hybrid working model available after the initial 3-month period.
+        </p>
+      </div>
+
+      <!-- FILTER BAR -->
+      <div class="card" style="padding:14px 16px;margin-bottom:16px;">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <input type="text" id="job-search" placeholder="Search by title or skill…"
+            style="flex:1;min-width:180px;padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;">
+          <select id="type-filter"
+            style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
+            <option value="">All Types</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="fullstack">Full Stack</option>
+          </select>
+          <select id="level-filter"
+            style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
+            <option value="">All Levels</option>
+            <option value="entry">Entry Level</option>
+            <option value="junior">Junior</option>
+            <option value="mid">Mid-Level</option>
+          </select>
+          <button onclick="clearJobFilters()"
+            style="padding:7px 12px;background:#f0f0f0;border:1px solid #ccc;border-radius:4px;font-size:12px;cursor:pointer;">Clear</button>
         </div>
       </div>
 
-      <!-- JOB 2 -->
-      <div class="job-card" data-type="fullstack" data-level="junior" data-skills="HTML CSS React JS">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-          <div class="job-title">Junior Web Developer (React)</div>
-          <span style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
+      <div id="jobs-container">
+
+        <!-- JOB 1 -->
+        <div class="job-card" id="frontend" data-type="frontend" data-level="entry" data-skills="HTML CSS JS">
+          <div
+            style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+            <div class="job-title">Frontend Developer (Entry Level)</div>
+            <span
+              style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
+          </div>
+          <div class="job-meta">
+            <span>📍 Gloucester</span>
+            <span>🕐 Full-time</span>
+            <span>📊 Entry Level</span>
+            <span>💷 £22,000–£26,000</span>
+            <span>📅 Posted: 3 days ago</span>
+          </div>
+          <div class="job-skills" style="margin-bottom:10px;">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+            <span class="tag tag-js">JS</span>
+          </div>
+          <div class="job-desc">
+            We're looking for an enthusiastic frontend developer to join our trainee programme. You'll be working on
+            real client projects building responsive, accessible websites using HTML, CSS, and vanilla JavaScript. No
+            prior professional experience required — we're looking for demonstrable ability and a strong willingness to
+            learn.
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="font-size:13px;">Key Responsibilities:</strong>
+            <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
+              <li>Build and maintain responsive HTML/CSS layouts from design files</li>
+              <li>Implement client-side interactions using JavaScript</li>
+              <li>Participate in daily stand-ups and weekly code reviews</li>
+              <li>Collaborate with senior developers and designers</li>
+              <li>Document your code clearly and consistently</li>
+            </ul>
+          </div>
+          <div class="job-footer">
+            <div></div>
+            <a href="apply.html?role=frontend-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
+          </div>
         </div>
-        <div class="job-meta">
-          <span>📍 Gloucester</span>
-          <span>🕐 Full-time</span>
-          <span>📊 Junior</span>
-          <span>💷 £24,000–£28,000</span>
-          <span>📅 Posted: 1 week ago</span>
+
+        <!-- JOB 2 -->
+        <div class="job-card" data-type="fullstack" data-level="junior" data-skills="HTML CSS React JS">
+          <div
+            style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+            <div class="job-title">Junior Web Developer (React)</div>
+            <span
+              style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
+          </div>
+          <div class="job-meta">
+            <span>📍 Gloucester</span>
+            <span>🕐 Full-time</span>
+            <span>📊 Junior</span>
+            <span>💷 £24,000–£28,000</span>
+            <span>📅 Posted: 1 week ago</span>
+          </div>
+          <div class="job-skills" style="margin-bottom:10px;">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+            <span class="tag tag-react">React</span>
+            <span class="tag tag-js">JS</span>
+          </div>
+          <div class="job-desc">
+            A junior position focused on building component-based interfaces using React. You should have a basic
+            understanding of React fundamentals — either from a course, bootcamp, or personal projects — and be ready to
+            develop that understanding on real production code.
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="font-size:13px;">Key Responsibilities:</strong>
+            <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
+              <li>Develop reusable React components for client web applications</li>
+              <li>Work with REST APIs to fetch and display data</li>
+              <li>Write clean, readable, well-tested JavaScript</li>
+              <li>Participate in sprint planning and retrospectives</li>
+              <li>Contribute to internal component library documentation</li>
+            </ul>
+          </div>
+          <div class="job-footer">
+            <div></div>
+            <a href="apply.html?role=junior-web-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
+          </div>
         </div>
-        <div class="job-skills" style="margin-bottom:10px;">
-          <span class="tag tag-html">HTML</span>
-          <span class="tag tag-css">CSS</span>
-          <span class="tag tag-react">React</span>
-          <span class="tag tag-js">JS</span>
+
+        <!-- JOB 3 -->
+        <div class="job-card" id="backend" data-type="backend" data-level="junior" data-skills="PHP SQL MySQL">
+          <div
+            style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+            <div class="job-title">PHP Backend Developer</div>
+            <span
+              style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
+          </div>
+          <div class="job-meta">
+            <span>📍 Gloucester / Remote</span>
+            <span>🕐 Full-time</span>
+            <span>📊 Junior</span>
+            <span>💷 £23,000–£27,000</span>
+            <span>📅 Posted: 5 days ago</span>
+          </div>
+          <div class="job-skills" style="margin-bottom:10px;">
+            <span class="tag tag-php">PHP</span>
+            <span class="tag tag-sql">SQL</span>
+            <span class="tag" style="background:#00758F;">MySQL</span>
+          </div>
+          <div class="job-desc">
+            Looking for a junior developer with basic PHP and SQL knowledge to join our backend team. You'll be building
+            server-side logic, working with MySQL databases, and integrating third-party APIs. Remote working available
+            after an initial in-office onboarding period.
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="font-size:13px;">Key Responsibilities:</strong>
+            <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
+              <li>Write and maintain PHP application logic and REST APIs</li>
+              <li>Design and query MySQL databases</li>
+              <li>Integrate third-party payment and shipping APIs</li>
+              <li>Write unit tests and participate in code reviews</li>
+              <li>Debug and resolve issues escalated from client support</li>
+            </ul>
+          </div>
+          <div class="job-footer">
+            <div></div>
+            <a href="apply.html?role=php-backend-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
+          </div>
         </div>
-        <div class="job-desc">
-          A junior position focused on building component-based interfaces using React. You should have a basic understanding of React fundamentals — either from a course, bootcamp, or personal projects — and be ready to develop that understanding on real production code.
+
+        <!-- JOB 4 -->
+        <div class="job-card" id="fullstack" data-type="fullstack" data-level="mid" data-skills="JS Node React SQL">
+          <div
+            style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+            <div class="job-title">Mid-Level Full Stack Developer</div>
+            <span
+              style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
+          </div>
+          <div class="job-meta">
+            <span>📍 Gloucester / Hybrid</span>
+            <span>🕐 Full-time</span>
+            <span>📊 Mid-Level</span>
+            <span>💷 £32,000–£38,000</span>
+            <span>📅 Posted: 2 weeks ago</span>
+          </div>
+          <div class="job-skills" style="margin-bottom:10px;">
+            <span class="tag tag-js">JS</span>
+            <span class="tag tag-react">React</span>
+            <span class="tag tag-node">Node</span>
+            <span class="tag tag-sql">SQL</span>
+          </div>
+          <div class="job-desc">
+            An opportunity for a developer with 2+ years of professional experience looking to step into a larger role.
+            You'll take lead on smaller client projects, mentor our trainees, and have real input into our technical
+            direction.
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="font-size:13px;">Key Responsibilities:</strong>
+            <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
+              <li>Lead delivery of small-to-medium client web application projects</li>
+              <li>Mentor 1–2 trainee developers</li>
+              <li>Define technical approach and architecture for assigned projects</li>
+              <li>Collaborate with project management on estimations and planning</li>
+              <li>Contribute to internal tooling and process improvements</li>
+            </ul>
+          </div>
+          <div class="job-footer">
+            <div></div>
+            <a href="apply.html?role=mid-fullstack-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
+          </div>
         </div>
-        <div style="margin-bottom:12px;">
-          <strong style="font-size:13px;">Key Responsibilities:</strong>
-          <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
-            <li>Develop reusable React components for client web applications</li>
-            <li>Work with REST APIs to fetch and display data</li>
-            <li>Write clean, readable, well-tested JavaScript</li>
-            <li>Participate in sprint planning and retrospectives</li>
-            <li>Contribute to internal component library documentation</li>
-          </ul>
+
+      </div>
+
+      <div id="no-jobs" style="display:none;"></div>
+
+      <!-- REQUIREMENTS SECTION -->
+      <div id="requirements" class="card" style="margin-top:24px;">
+        <h2>General Requirements for All Roles</h2>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">Regardless of the specific role, we look
+          for the following in all applicants:</p>
+        <div class="grid-2">
+          <div>
+            <h3 style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--primary);">Essential</h3>
+            <ul style="padding-left:18px;font-size:13px;color:var(--text-muted);line-height:2;">
+              <li>Genuine interest in web development</li>
+              <li>Basic understanding of HTML and CSS</li>
+              <li>Ability to learn quickly and ask for help when needed</li>
+              <li>Good written and verbal communication</li>
+              <li>Right to work in the UK</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--text-muted);">Desirable (but not
+              required)</h3>
+            <ul style="padding-left:18px;font-size:13px;color:var(--text-muted);line-height:2;">
+              <li>Relevant qualification (degree, HND, bootcamp certificate)</li>
+              <li>Personal projects or portfolio to share</li>
+              <li>Familiarity with version control (Git)</li>
+              <li>Experience working in an agile team</li>
+              <li>Any freelance or voluntary web work</li>
+            </ul>
+          </div>
         </div>
-        <div class="job-footer">
-          <div></div>
-          <a href="apply.html?role=junior-web-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
+        <div style="margin-top:16px;text-align:center;">
+          <a href="apply.html" class="btn btn-accent">Start Your Application →</a>
         </div>
       </div>
 
-      <!-- JOB 3 -->
-      <div class="job-card" id="backend" data-type="backend" data-level="junior" data-skills="PHP SQL MySQL">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-          <div class="job-title">PHP Backend Developer</div>
-          <span style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
-        </div>
-        <div class="job-meta">
-          <span>📍 Gloucester / Remote</span>
-          <span>🕐 Full-time</span>
-          <span>📊 Junior</span>
-          <span>💷 £23,000–£27,000</span>
-          <span>📅 Posted: 5 days ago</span>
-        </div>
-        <div class="job-skills" style="margin-bottom:10px;">
-          <span class="tag tag-php">PHP</span>
-          <span class="tag tag-sql">SQL</span>
-          <span class="tag" style="background:#00758F;">MySQL</span>
-        </div>
-        <div class="job-desc">
-          Looking for a junior developer with basic PHP and SQL knowledge to join our backend team. You'll be building server-side logic, working with MySQL databases, and integrating third-party APIs. Remote working available after an initial in-office onboarding period.
-        </div>
-        <div style="margin-bottom:12px;">
-          <strong style="font-size:13px;">Key Responsibilities:</strong>
-          <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
-            <li>Write and maintain PHP application logic and REST APIs</li>
-            <li>Design and query MySQL databases</li>
-            <li>Integrate third-party payment and shipping APIs</li>
-            <li>Write unit tests and participate in code reviews</li>
-            <li>Debug and resolve issues escalated from client support</li>
-          </ul>
-        </div>
-        <div class="job-footer">
-          <div></div>
-          <a href="apply.html?role=php-backend-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
-        </div>
-      </div>
+    </main>
+  </div>
 
-      <!-- JOB 4 -->
-      <div class="job-card" id="fullstack" data-type="fullstack" data-level="mid" data-skills="JS Node React SQL">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-          <div class="job-title">Mid-Level Full Stack Developer</div>
-          <span style="background:#e8f5ee;color:var(--success);font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;">Open</span>
-        </div>
-        <div class="job-meta">
-          <span>📍 Gloucester / Hybrid</span>
-          <span>🕐 Full-time</span>
-          <span>📊 Mid-Level</span>
-          <span>💷 £32,000–£38,000</span>
-          <span>📅 Posted: 2 weeks ago</span>
-        </div>
-        <div class="job-skills" style="margin-bottom:10px;">
-          <span class="tag tag-js">JS</span>
-          <span class="tag tag-react">React</span>
-          <span class="tag tag-node">Node</span>
-          <span class="tag tag-sql">SQL</span>
-        </div>
-        <div class="job-desc">
-          An opportunity for a developer with 2+ years of professional experience looking to step into a larger role. You'll take lead on smaller client projects, mentor our trainees, and have real input into our technical direction.
-        </div>
-        <div style="margin-bottom:12px;">
-          <strong style="font-size:13px;">Key Responsibilities:</strong>
-          <ul style="margin-top:6px;padding-left:18px;font-size:13px;color:var(--text-muted);line-height:1.8;">
-            <li>Lead delivery of small-to-medium client web application projects</li>
-            <li>Mentor 1–2 trainee developers</li>
-            <li>Define technical approach and architecture for assigned projects</li>
-            <li>Collaborate with project management on estimations and planning</li>
-            <li>Contribute to internal tooling and process improvements</li>
-          </ul>
-        </div>
-        <div class="job-footer">
-          <div></div>
-          <a href="apply.html?role=mid-fullstack-developer" class="btn btn-primary btn-sm">Apply for This Role →</a>
-        </div>
-      </div>
+  <footer class="site-footer">
+    © 2024 HotBeans Web Ltd. · Gloucester, UK · <a href="mailto:careers@hotbeansweb.co.uk"
+      style="color:rgba(255,255,255,0.4);">careers@hotbeansweb.co.uk</a>
+  </footer>
 
-    </div>
+  <script src="main.js"></script>
+  <script>
+    const jobSearch = document.getElementById('job-search');
+    const typeFilter = document.getElementById('type-filter');
+    const levelFilter = document.getElementById('level-filter');
 
-    <div id="no-jobs" style="display:none;"></div>
+    function filterJobs() {
+      const q = jobSearch.value.toLowerCase();
+      const type = typeFilter.value.toLowerCase();
+      const level = levelFilter.value.toLowerCase();
 
-    <!-- REQUIREMENTS SECTION -->
-    <div id="requirements" class="card" style="margin-top:24px;">
-      <h2>General Requirements for All Roles</h2>
-      <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">Regardless of the specific role, we look for the following in all applicants:</p>
-      <div class="grid-2">
-        <div>
-          <h3 style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--primary);">Essential</h3>
-          <ul style="padding-left:18px;font-size:13px;color:var(--text-muted);line-height:2;">
-            <li>Genuine interest in web development</li>
-            <li>Basic understanding of HTML and CSS</li>
-            <li>Ability to learn quickly and ask for help when needed</li>
-            <li>Good written and verbal communication</li>
-            <li>Right to work in the UK</li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--text-muted);">Desirable (but not required)</h3>
-          <ul style="padding-left:18px;font-size:13px;color:var(--text-muted);line-height:2;">
-            <li>Relevant qualification (degree, HND, bootcamp certificate)</li>
-            <li>Personal projects or portfolio to share</li>
-            <li>Familiarity with version control (Git)</li>
-            <li>Experience working in an agile team</li>
-            <li>Any freelance or voluntary web work</li>
-          </ul>
-        </div>
-      </div>
-      <div style="margin-top:16px;text-align:center;">
-        <a href="apply.html" class="btn btn-accent">Start Your Application →</a>
-      </div>
-    </div>
+      const cards = document.querySelectorAll('.job-card');
+      let visible = 0;
 
-  </main>
-</div>
+      cards.forEach(card => {
+        const title = card.querySelector('.job-title').textContent.toLowerCase();
+        const skills = (card.dataset.skills || '').toLowerCase();
+        const cardType = (card.dataset.type || '').toLowerCase();
+        const cardLevel = (card.dataset.level || '').toLowerCase();
 
-<footer class="site-footer">
-  © 2024 HotBeans Web Ltd. · Gloucester, UK · <a href="mailto:careers@hotbeansweb.co.uk" style="color:rgba(255,255,255,0.4);">careers@hotbeansweb.co.uk</a>
-</footer>
+        const matchQ = !q || title.includes(q) || skills.includes(q);
+        const matchType = !type || cardType === type;
+        const matchLevel = !level || cardLevel === level;
 
-<script src="main.js"></script>
-<script>
-  const jobSearch = document.getElementById('job-search');
-  const typeFilter = document.getElementById('type-filter');
-  const levelFilter = document.getElementById('level-filter');
+        if (matchQ && matchType && matchLevel) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
 
-  function filterJobs() {
-    const q = jobSearch.value.toLowerCase();
-    const type = typeFilter.value.toLowerCase();
-    const level = levelFilter.value.toLowerCase();
-
-    const cards = document.querySelectorAll('.job-card');
-    let visible = 0;
-
-    cards.forEach(card => {
-      const title = card.querySelector('.job-title').textContent.toLowerCase();
-      const skills = (card.dataset.skills || '').toLowerCase();
-      const cardType = (card.dataset.type || '').toLowerCase();
-      const cardLevel = (card.dataset.level || '').toLowerCase();
-
-      const matchQ = !q || title.includes(q) || skills.includes(q);
-      const matchType = !type || cardType === type;
-      const matchLevel = !level || cardLevel === level;
-
-      if (matchQ && matchType && matchLevel) {
-        card.style.display = '';
-        visible++;
+      const noJobs = document.getElementById('no-jobs');
+      if (visible === 0) {
+        noJobs.innerHTML = '<div class="notice notice-warn">No jobs match your filters. <a href="#" onclick="clearJobFilters();return false;">Clear filters</a></div>';
+        noJobs.style.display = 'block';
       } else {
-        card.style.display = 'none';
+        noJobs.style.display = 'none';
       }
-    });
-
-    const noJobs = document.getElementById('no-jobs');
-    if (visible === 0) {
-      noJobs.innerHTML = '<div class="notice notice-warn">No jobs match your filters. <a href="#" onclick="clearJobFilters();return false;">Clear filters</a></div>';
-      noJobs.style.display = 'block';
-    } else {
-      noJobs.style.display = 'none';
     }
-  }
 
-  function clearJobFilters() {
-    jobSearch.value = '';
-    typeFilter.value = '';
-    levelFilter.value = '';
-    filterJobs();
-  }
+    function clearJobFilters() {
+      jobSearch.value = '';
+      typeFilter.value = '';
+      levelFilter.value = '';
+      filterJobs();
+    }
 
-  jobSearch.addEventListener('input', filterJobs);
-  typeFilter.addEventListener('change', filterJobs);
-  levelFilter.addEventListener('change', filterJobs);
+    jobSearch.addEventListener('input', filterJobs);
+    typeFilter.addEventListener('change', filterJobs);
+    levelFilter.addEventListener('change', filterJobs);
 
-  // Pre-select role from query param if coming from a job card link
-  const params = new URLSearchParams(window.location.search);
-  // (handled on apply page instead)
-</script>
+    // Pre-select role from query param if coming from a job card link
+    const params = new URLSearchParams(window.location.search);
+    // (handled on apply page instead)
+  </script>
 </body>
+
 </html>

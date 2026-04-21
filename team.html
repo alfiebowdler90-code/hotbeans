@@ -1,294 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HotBeans Web – Our Team</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="topnav">
-  <a href="index.html" class="logo">
-     scr <img src="https://th.bing.com/th/id/OIP.YHjpVh_dgI79iVT2qA23bwHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3" length="45px" width="45">
+  <header class="topnav">
+    <a href="index.html" class="logo">
+      <img src="https://th.bing.com/th/id/OIP.YHjpVh_dgI79iVT2qA23bwHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+        length="45px" width="45">
+      Hot Beans
+    </a>
+    <nav>
+      <a href="index.html" data-nav>Home</a>
+      <a href="about.html" data-nav>About Us</a>
+      <a href="team.html" data-nav class="active">Our Team</a>
+      <a href="jobs.html" data-nav>Jobs</a>
+      <a href="apply.html" data-nav>Apply</a>
+    </nav>
+    <a href="apply.html" class="topnav-cta">Apply Now</a>
+  </header>
 
-    Hot Beans
-  </a>
-  <nav>
-    <a href="index.html" data-nav>Home</a>
-    <a href="about.html" data-nav>About Us</a>
-    <a href="team.html" data-nav class="active">Our Team</a>
-    <a href="jobs.html" data-nav>Jobs</a>
-    <a href="apply.html" data-nav>Apply</a>
-  </nav>
-  <a href="apply.html" class="topnav-cta">Apply Now</a>
-</header>
-
-<div class="layout">
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-label">Main</div>
-      <a href="index.html" data-nav><i class="icon">⌂</i> Home</a>
-      <a href="about.html" data-nav><i class="icon">ℹ</i> About</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-label">Careers</div>
-      <a href="team.html" class="active" data-nav><i class="icon">👥</i> Our Team</a>
-      <a href="jobs.html" data-nav><i class="icon">📋</i> Jobs</a>
-      <a href="apply.html" data-nav><i class="icon">✏</i> Apply</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-label">Filter</div>
-      <a href="#senior"><i class="icon">⭐</i> Senior Devs</a>
-      <a href="#trainees"><i class="icon">🎓</i> Trainees</a>
-      <a href="#management"><i class="icon">👔</i> Management</a>
-    </div>
-    <div class="sidebar-footer">
-      <div class="company-name">HotBeans Web Ltd.</div>
-      <div class="tagline">Developing Tomorrow's Talent</div>
-    </div>
-  </aside>
-
-  <main class="main">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span class="sep">›</span>
-      <span>Our Team</span>
-    </div>
-
-    <div class="page-header">
-      <h1>Our Team</h1>
-      <p>Meet the people who make HotBeans tick — from senior developers to the latest trainees.</p>
-    </div>
-
-    <!-- SEARCH / FILTER BAR -->
-    <div class="card" style="padding:14px 16px;margin-bottom:16px;">
-      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
-        <input type="text" id="team-search" placeholder="Search by name or skill…" style="flex:1;min-width:180px;padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;">
-        <select id="dept-filter" style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
-          <option value="">All Departments</option>
-          <option value="senior">Senior Developers</option>
-          <option value="trainee">Trainees</option>
-          <option value="management">Management</option>
-        </select>
-        <select id="skill-filter" style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
-          <option value="">All Skills</option>
-          <option value="HTML">HTML</option>
-          <option value="CSS">CSS</option>
-          <option value="JS">JavaScript</option>
-          <option value="React">React</option>
-          <option value="PHP">PHP</option>
-          <option value="Node">Node.js</option>
-          <option value="Python">Python</option>
-        </select>
-        <button onclick="clearFilters()" style="padding:7px 12px;background:#f0f0f0;border:1px solid #ccc;border-radius:4px;font-size:12px;cursor:pointer;">Clear</button>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Main</div>
+        <a href="index.html" data-nav><i class="icon">⌂</i> Home</a>
+        <a href="about.html" data-nav><i class="icon">ℹ</i> About</a>
       </div>
-    </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Careers</div>
+        <a href="team.html" class="active" data-nav><i class="icon">👥</i> Our Team</a>
+        <a href="jobs.html" data-nav><i class="icon">📋</i> Jobs</a>
+        <a href="apply.html" data-nav><i class="icon">✏</i> Apply</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Filter</div>
+        <a href="#senior"><i class="icon">⭐</i> Senior Devs</a>
+        <a href="#trainees"><i class="icon">🎓</i> Trainees</a>
+        <a href="#management"><i class="icon">👔</i> Management</a>
+      </div>
+      <div class="sidebar-footer">
+        <div class="company-name">HotBeans Web Ltd.</div>
+        <div class="tagline">Developing Tomorrow's Talent</div>
+      </div>
+    </aside>
 
-    <!-- MANAGEMENT -->
-    <h2 id="management" style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">Management</h2>
-    <div class="grid-3" style="margin-bottom:24px;" id="management-grid">
-
-      <div class="team-card" data-dept="management" data-skills="leadership management">
-        <div class="avatar" style="background:#2c3e50;">TH</div>
-        <div class="name">Tom Hartley</div>
-        <div class="role">Co-Founder & CEO</div>
-        <div><span class="tag" style="background:#2c3e50;">Leadership</span><span class="tag" style="background:#555;">Strategy</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Tom oversees company direction, client relationships, and the trainee programme strategy.</p>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <span>Our Team</span>
       </div>
 
-      <div class="team-card" data-dept="management" data-skills="leadership tech architecture">
-        <div class="avatar" style="background:#1a4d7a;">DH</div>
-        <div class="name">David Hartley</div>
-        <div class="role">Co-Founder & CTO</div>
-        <div><span class="tag tag-js">JS</span><span class="tag tag-node">Node</span><span class="tag" style="background:#555;">Architecture</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">David leads technical direction and standards. 18+ years of full-stack development experience.</p>
+      <div class="page-header">
+        <h1>Our Team</h1>
+        <p>Meet the people who make HotBeans tick — from senior developers to the latest trainees.</p>
       </div>
 
-      <div class="team-card" data-dept="management" data-skills="hr people operations">
-        <div class="avatar" style="background:#8e44ad;">LC</div>
-        <div class="name">Lisa Chen</div>
-        <div class="role">Head of People</div>
-        <div><span class="tag" style="background:#8e44ad;">HR</span><span class="tag" style="background:#555;">Recruitment</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Lisa manages recruitment, trainee welfare, and our internal mentorship matching programme.</p>
+      <!-- SEARCH / FILTER BAR -->
+      <div class="card" style="padding:14px 16px;margin-bottom:16px;">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <input type="text" id="team-search" placeholder="Search by name or skill…"
+            style="flex:1;min-width:180px;padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;">
+          <select id="dept-filter"
+            style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
+            <option value="">All Departments</option>
+            <option value="senior">Senior Developers</option>
+            <option value="trainee">Trainees</option>
+            <option value="management">Management</option>
+          </select>
+          <select id="skill-filter"
+            style="padding:7px 10px;border:1px solid #ccc;border-radius:4px;font-size:13px;background:#fff;">
+            <option value="">All Skills</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JavaScript</option>
+            <option value="React">React</option>
+            <option value="PHP">PHP</option>
+            <option value="Node">Node.js</option>
+            <option value="Python">Python</option>
+          </select>
+          <button onclick="clearFilters()"
+            style="padding:7px 12px;background:#f0f0f0;border:1px solid #ccc;border-radius:4px;font-size:12px;cursor:pointer;">Clear</button>
+        </div>
       </div>
 
-    </div>
+      <!-- MANAGEMENT -->
+      <h2 id="management"
+        style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">
+        Management</h2>
+      <div class="grid-3" style="margin-bottom:24px;" id="management-grid">
 
-    <!-- SENIOR DEVS -->
-    <h2 id="senior" style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">Senior Developers</h2>
-    <div class="grid-3" style="margin-bottom:24px;" id="senior-grid">
+        <div class="team-card" data-dept="management" data-skills="leadership management">
+          <div class="avatar" style="background:#2c3e50;">TH</div>
+          <div class="name">Tom Hartley</div>
+          <div class="role">Co-Founder & CEO</div>
+          <div><span class="tag" style="background:#2c3e50;">Leadership</span><span class="tag"
+              style="background:#555;">Strategy</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Tom oversees company
+            direction, client relationships, and the trainee programme strategy.</p>
+        </div>
 
-      <div class="team-card" data-dept="senior" data-skills="HTML CSS JS React">
-        <div class="avatar" style="background:#2c7bb6;">AK</div>
-        <div class="name">Amir Khan</div>
-        <div class="role">Senior Frontend Dev</div>
-        <div class="status status-available">● Available for mentoring</div>
-        <div><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span><span class="tag tag-react">React</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">8 years of frontend experience. Specialist in accessible, performant interfaces.</p>
+        <div class="team-card" data-dept="management" data-skills="leadership tech architecture">
+          <div class="avatar" style="background:#1a4d7a;">DH</div>
+          <div class="name">David Hartley</div>
+          <div class="role">Co-Founder & CTO</div>
+          <div><span class="tag tag-js">JS</span><span class="tag tag-node">Node</span><span class="tag"
+              style="background:#555;">Architecture</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">David leads technical
+            direction and standards. 18+ years of full-stack development experience.</p>
+        </div>
+
+        <div class="team-card" data-dept="management" data-skills="hr people operations">
+          <div class="avatar" style="background:#8e44ad;">LC</div>
+          <div class="name">Lisa Chen</div>
+          <div class="role">Head of People</div>
+          <div><span class="tag" style="background:#8e44ad;">HR</span><span class="tag"
+              style="background:#555;">Recruitment</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Lisa manages recruitment,
+            trainee welfare, and our internal mentorship matching programme.</p>
+        </div>
+
       </div>
 
-      <div class="team-card" data-dept="senior" data-skills="PHP SQL Node">
-        <div class="avatar" style="background:#27ae60;">KN</div>
-        <div class="name">Karen Nwachukwu</div>
-        <div class="role">Senior Backend Dev</div>
-        <div class="status status-placed">● On client project</div>
-        <div><span class="tag tag-php">PHP</span><span class="tag tag-sql">SQL</span><span class="tag tag-node">Node</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Database architecture and API design specialist. Mentors all backend trainees.</p>
+      <!-- SENIOR DEVS -->
+      <h2 id="senior"
+        style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">
+        Senior Developers</h2>
+      <div class="grid-3" style="margin-bottom:24px;" id="senior-grid">
+
+        <div class="team-card" data-dept="senior" data-skills="HTML CSS JS React">
+          <div class="avatar" style="background:#2c7bb6;">AK</div>
+          <div class="name">Amir Khan</div>
+          <div class="role">Senior Frontend Dev</div>
+          <div class="status status-available">● Available for mentoring</div>
+          <div><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span><span
+              class="tag tag-react">React</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">8 years of frontend
+            experience. Specialist in accessible, performant interfaces.</p>
+        </div>
+
+        <div class="team-card" data-dept="senior" data-skills="PHP SQL Node">
+          <div class="avatar" style="background:#27ae60;">KN</div>
+          <div class="name">Karen Nwachukwu</div>
+          <div class="role">Senior Backend Dev</div>
+          <div class="status status-placed">● On client project</div>
+          <div><span class="tag tag-php">PHP</span><span class="tag tag-sql">SQL</span><span
+              class="tag tag-node">Node</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Database architecture and
+            API design specialist. Mentors all backend trainees.</p>
+        </div>
+
+        <div class="team-card" data-dept="senior" data-skills="JS React Node Python">
+          <div class="avatar" style="background:#e74c3c;">PS</div>
+          <div class="name">Pete Simmons</div>
+          <div class="role">Lead Full-Stack Dev</div>
+          <div class="status status-available">● Available for mentoring</div>
+          <div><span class="tag tag-js">JS</span><span class="tag tag-react">React</span><span
+              class="tag tag-node">Node</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Our most experienced
+            full-stack developer. Runs weekly code review sessions for the whole team.</p>
+        </div>
+
+        <div class="team-card" data-dept="senior" data-skills="CSS HTML design UI UX">
+          <div class="avatar" style="background:#e67e22;">OM</div>
+          <div class="name">Olivia Morris</div>
+          <div class="role">Senior UI Developer</div>
+          <div class="status status-placed">● On client project</div>
+          <div><span class="tag tag-css">CSS</span><span class="tag tag-html">HTML</span><span
+              class="tag tag-js">JS</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Design systems, component
+            libraries, and responsive UI. Previously at a leading design agency.</p>
+        </div>
+
+        <div class="team-card" data-dept="senior" data-skills="PHP SQL WordPress CMS">
+          <div class="avatar" style="background:#16a085;">BF</div>
+          <div class="name">Ben Fitzgerald</div>
+          <div class="role">WordPress Specialist</div>
+          <div class="status status-available">● Available for mentoring</div>
+          <div><span class="tag tag-php">PHP</span><span class="tag" style="background:#21759B;">WP</span><span
+              class="tag tag-sql">SQL</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">10 years of WordPress
+            development. Expert in custom themes, plugins, and Gutenberg blocks.</p>
+        </div>
+
       </div>
 
-      <div class="team-card" data-dept="senior" data-skills="JS React Node Python">
-        <div class="avatar" style="background:#e74c3c;">PS</div>
-        <div class="name">Pete Simmons</div>
-        <div class="role">Lead Full-Stack Dev</div>
-        <div class="status status-available">● Available for mentoring</div>
-        <div><span class="tag tag-js">JS</span><span class="tag tag-react">React</span><span class="tag tag-node">Node</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Our most experienced full-stack developer. Runs weekly code review sessions for the whole team.</p>
+      <!-- TRAINEES -->
+      <h2 id="trainees"
+        style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">
+        Trainee Developers</h2>
+      <div class="notice notice-info">
+        <strong>About our trainees:</strong> These developers are currently completing our structured training
+        programme. They work on live client projects under senior mentorship. Many are open to short-term placements.
+      </div>
+      <div class="grid-3" id="trainee-grid">
+
+        <div class="team-card" data-dept="trainee" data-skills="HTML CSS">
+          <div class="avatar" style="background:#3498db;">JD</div>
+          <div class="name">Jane Dawson</div>
+          <div class="role">Trainee – HTML/CSS</div>
+          <div class="status status-training">● In training – Month 4</div>
+          <div><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Former graphic designer
+            transitioning into frontend development. Strong eye for layout and typography.</p>
+        </div>
+
+        <div class="team-card" data-dept="trainee" data-skills="JS React HTML">
+          <div class="avatar" style="background:#f39c12;">MT</div>
+          <div class="name">Mark Thorpe</div>
+          <div class="role">Trainee – JavaScript</div>
+          <div class="status status-training">● In training – Month 7</div>
+          <div><span class="tag tag-js">JS</span><span class="tag tag-react">React</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Computer science graduate
+            with a passion for UI interactions. Currently building his first React app.</p>
+        </div>
+
+        <div class="team-card" data-dept="trainee" data-skills="CSS Python HTML">
+          <div class="avatar" style="background:#27ae60;">SP</div>
+          <div class="name">Sarah Perkins</div>
+          <div class="role">Trainee – CSS / Python</div>
+          <div class="status status-training">● In training – Month 5</div>
+          <div><span class="tag tag-css">CSS</span><span class="tag tag-python">Python</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Career changer from data
+            analysis. Combining Python scripting skills with a new interest in frontend.</p>
+        </div>
+
+        <div class="team-card" data-dept="trainee" data-skills="PHP SQL">
+          <div class="avatar" style="background:#8892BF;">RT</div>
+          <div class="name">Ryan Taylor</div>
+          <div class="role">Trainee – Backend</div>
+          <div class="status status-training">● In training – Month 3</div>
+          <div><span class="tag tag-php">PHP</span><span class="tag tag-sql">SQL</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Self-taught coder with a
+            background in IT support. Taking his first steps into professional backend development.</p>
+        </div>
+
+        <div class="team-card" data-dept="trainee" data-skills="HTML CSS JS">
+          <div class="avatar" style="background:#e74c3c;">AB</div>
+          <div class="name">Aisha Bashir</div>
+          <div class="role">Trainee – Frontend</div>
+          <div class="status status-training">● In training – Month 6</div>
+          <div><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span><span
+              class="tag tag-js">JS</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Recent bootcamp graduate.
+            Quickly developing her skills across the full frontend stack.</p>
+        </div>
+
+        <div class="team-card" data-dept="trainee" data-skills="Node JS SQL">
+          <div class="avatar" style="background:#2c3e50;">LM</div>
+          <div class="name">Leo Marsh</div>
+          <div class="role">Trainee – Full Stack</div>
+          <div class="status status-training">● In training – Month 8</div>
+          <div><span class="tag tag-node">Node</span><span class="tag tag-js">JS</span><span
+              class="tag tag-sql">SQL</span></div>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">University placement
+            student. Currently the most advanced in the trainee cohort — working on a solo client feature.</p>
+        </div>
+
       </div>
 
-      <div class="team-card" data-dept="senior" data-skills="CSS HTML design UI UX">
-        <div class="avatar" style="background:#e67e22;">OM</div>
-        <div class="name">Olivia Morris</div>
-        <div class="role">Senior UI Developer</div>
-        <div class="status status-placed">● On client project</div>
-        <div><span class="tag tag-css">CSS</span><span class="tag tag-html">HTML</span><span class="tag tag-js">JS</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Design systems, component libraries, and responsive UI. Previously at a leading design agency.</p>
-      </div>
+      <div style="margin-top:20px;" id="no-results" style="display:none;"></div>
 
-      <div class="team-card" data-dept="senior" data-skills="PHP SQL WordPress CMS">
-        <div class="avatar" style="background:#16a085;">BF</div>
-        <div class="name">Ben Fitzgerald</div>
-        <div class="role">WordPress Specialist</div>
-        <div class="status status-available">● Available for mentoring</div>
-        <div><span class="tag tag-php">PHP</span><span class="tag" style="background:#21759B;">WP</span><span class="tag tag-sql">SQL</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">10 years of WordPress development. Expert in custom themes, plugins, and Gutenberg blocks.</p>
-      </div>
+    </main>
+  </div>
 
-    </div>
+  <footer class="site-footer">
+    © 2024 HotBeans Web Ltd. · Gloucester, UK · <a href="mailto:careers@hotbeansweb.co.uk"
+      style="color:rgba(255,255,255,0.4);">careers@hotbeansweb.co.uk</a>
+  </footer>
 
-    <!-- TRAINEES -->
-    <h2 id="trainees" style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">Trainee Developers</h2>
-    <div class="notice notice-info">
-      <strong>About our trainees:</strong> These developers are currently completing our structured training programme. They work on live client projects under senior mentorship. Many are open to short-term placements.
-    </div>
-    <div class="grid-3" id="trainee-grid">
+  <script src="main.js"></script>
+  <script>
+    const searchInput = document.getElementById('team-search');
+    const deptFilter = document.getElementById('dept-filter');
+    const skillFilter = document.getElementById('skill-filter');
+    const noResults = document.getElementById('no-results');
 
-      <div class="team-card" data-dept="trainee" data-skills="HTML CSS">
-        <div class="avatar" style="background:#3498db;">JD</div>
-        <div class="name">Jane Dawson</div>
-        <div class="role">Trainee – HTML/CSS</div>
-        <div class="status status-training">● In training – Month 4</div>
-        <div><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Former graphic designer transitioning into frontend development. Strong eye for layout and typography.</p>
-      </div>
+    function filterTeam() {
+      const q = searchInput.value.toLowerCase();
+      const dept = deptFilter.value.toLowerCase();
+      const skill = skillFilter.value.toLowerCase();
 
-      <div class="team-card" data-dept="trainee" data-skills="JS React HTML">
-        <div class="avatar" style="background:#f39c12;">MT</div>
-        <div class="name">Mark Thorpe</div>
-        <div class="role">Trainee – JavaScript</div>
-        <div class="status status-training">● In training – Month 7</div>
-        <div><span class="tag tag-js">JS</span><span class="tag tag-react">React</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Computer science graduate with a passion for UI interactions. Currently building his first React app.</p>
-      </div>
+      const cards = document.querySelectorAll('.team-card');
+      let visible = 0;
 
-      <div class="team-card" data-dept="trainee" data-skills="CSS Python HTML">
-        <div class="avatar" style="background:#27ae60;">SP</div>
-        <div class="name">Sarah Perkins</div>
-        <div class="role">Trainee – CSS / Python</div>
-        <div class="status status-training">● In training – Month 5</div>
-        <div><span class="tag tag-css">CSS</span><span class="tag tag-python">Python</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Career changer from data analysis. Combining Python scripting skills with a new interest in frontend.</p>
-      </div>
+      cards.forEach(card => {
+        const name = card.querySelector('.name').textContent.toLowerCase();
+        const role = card.querySelector('.role').textContent.toLowerCase();
+        const skills = (card.dataset.skills || '').toLowerCase();
+        const cardDept = (card.dataset.dept || '').toLowerCase();
 
-      <div class="team-card" data-dept="trainee" data-skills="PHP SQL">
-        <div class="avatar" style="background:#8892BF;">RT</div>
-        <div class="name">Ryan Taylor</div>
-        <div class="role">Trainee – Backend</div>
-        <div class="status status-training">● In training – Month 3</div>
-        <div><span class="tag tag-php">PHP</span><span class="tag tag-sql">SQL</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Self-taught coder with a background in IT support. Taking his first steps into professional backend development.</p>
-      </div>
+        const matchQ = !q || name.includes(q) || role.includes(q) || skills.includes(q);
+        const matchDept = !dept || cardDept === dept;
+        const matchSkill = !skill || skills.includes(skill.toLowerCase());
 
-      <div class="team-card" data-dept="trainee" data-skills="HTML CSS JS">
-        <div class="avatar" style="background:#e74c3c;">AB</div>
-        <div class="name">Aisha Bashir</div>
-        <div class="role">Trainee – Frontend</div>
-        <div class="status status-training">● In training – Month 6</div>
-        <div><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span><span class="tag tag-js">JS</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">Recent bootcamp graduate. Quickly developing her skills across the full frontend stack.</p>
-      </div>
+        if (matchQ && matchDept && matchSkill) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
 
-      <div class="team-card" data-dept="trainee" data-skills="Node JS SQL">
-        <div class="avatar" style="background:#2c3e50;">LM</div>
-        <div class="name">Leo Marsh</div>
-        <div class="role">Trainee – Full Stack</div>
-        <div class="status status-training">● In training – Month 8</div>
-        <div><span class="tag tag-node">Node</span><span class="tag tag-js">JS</span><span class="tag tag-sql">SQL</span></div>
-        <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;">University placement student. Currently the most advanced in the trainee cohort — working on a solo client feature.</p>
-      </div>
-
-    </div>
-
-    <div style="margin-top:20px;" id="no-results" style="display:none;"></div>
-
-  </main>
-</div>
-
-<footer class="site-footer">
-  © 2024 HotBeans Web Ltd. · Gloucester, UK · <a href="mailto:careers@hotbeansweb.co.uk" style="color:rgba(255,255,255,0.4);">careers@hotbeansweb.co.uk</a>
-</footer>
-
-<script src="main.js"></script>
-<script>
-  const searchInput = document.getElementById('team-search');
-  const deptFilter = document.getElementById('dept-filter');
-  const skillFilter = document.getElementById('skill-filter');
-  const noResults = document.getElementById('no-results');
-
-  function filterTeam() {
-    const q = searchInput.value.toLowerCase();
-    const dept = deptFilter.value.toLowerCase();
-    const skill = skillFilter.value.toLowerCase();
-
-    const cards = document.querySelectorAll('.team-card');
-    let visible = 0;
-
-    cards.forEach(card => {
-      const name = card.querySelector('.name').textContent.toLowerCase();
-      const role = card.querySelector('.role').textContent.toLowerCase();
-      const skills = (card.dataset.skills || '').toLowerCase();
-      const cardDept = (card.dataset.dept || '').toLowerCase();
-
-      const matchQ = !q || name.includes(q) || role.includes(q) || skills.includes(q);
-      const matchDept = !dept || cardDept === dept;
-      const matchSkill = !skill || skills.includes(skill.toLowerCase());
-
-      if (matchQ && matchDept && matchSkill) {
-        card.style.display = '';
-        visible++;
+      if (visible === 0) {
+        noResults.innerHTML = '<div class="notice notice-warn">No team members match your filters. <a href="#" onclick="clearFilters();return false;">Clear filters</a></div>';
+        noResults.style.display = 'block';
       } else {
-        card.style.display = 'none';
+        noResults.style.display = 'none';
       }
-    });
-
-    if (visible === 0) {
-      noResults.innerHTML = '<div class="notice notice-warn">No team members match your filters. <a href="#" onclick="clearFilters();return false;">Clear filters</a></div>';
-      noResults.style.display = 'block';
-    } else {
-      noResults.style.display = 'none';
     }
-  }
 
-  function clearFilters() {
-    searchInput.value = '';
-    deptFilter.value = '';
-    skillFilter.value = '';
-    filterTeam();
-  }
+    function clearFilters() {
+      searchInput.value = '';
+      deptFilter.value = '';
+      skillFilter.value = '';
+      filterTeam();
+    }
 
-  searchInput.addEventListener('input', filterTeam);
-  deptFilter.addEventListener('change', filterTeam);
-  skillFilter.addEventListener('change', filterTeam);
-</script>
+    searchInput.addEventListener('input', filterTeam);
+    deptFilter.addEventListener('change', filterTeam);
+    skillFilter.addEventListener('change', filterTeam);
+  </script>
 </body>
+
 </html>
